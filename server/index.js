@@ -10,7 +10,8 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/admin", adminRouter)
-app.use("/user", userRouter)
+app.use("/user", userRoute?r)
+app.get("/" , (req, res) => res.json({msg: "if its working i will show" }))
 
 
 // Connect to MongoDB
